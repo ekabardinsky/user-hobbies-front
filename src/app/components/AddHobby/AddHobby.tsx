@@ -7,12 +7,10 @@ interface Props {
 interface State {
 }
 
-
 export default class AddHobbyComponent extends React.Component<Props, State> {
   constructor(props: Props, context?: any) {
     super(props, context);
   }
-
 
   render() {
     return (

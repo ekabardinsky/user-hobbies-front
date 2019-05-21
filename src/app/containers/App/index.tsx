@@ -2,13 +2,14 @@ import * as React from 'react';
 import * as style from './style.css';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
-import { addUser, getListOfUsers } from 'app/actions';
+import { getListOfUsers } from 'app/actions';
 import { User } from 'app/models';
 
 import UserComponent from './../../components/User/User';
 import HobbyComponent from '../../components/Hobby/Hobby';
 import AddUserComponent from '../../components/AddUser/AddUser';
 import AddHobbyComponent from '../../components/AddHobby/AddHobby';
+import { getUserListCall } from 'app/utils/apiHelper';
 
 interface Props {
   users: User[],
@@ -25,7 +26,6 @@ interface State {
     return { users: state.userState.users };
   },
   (dispatch: Dispatch) => ({
-    addUser: bindActionCreators(addUser, dispatch),
     getListOfUsers: bindActionCreators(getListOfUsers, dispatch)
   })
 )
@@ -36,23 +36,18 @@ export class App extends React.Component<Props, State> {
   }
 
   getUserList = async () => {
-    const response = await fetch('/api/users', {
-      method: 'GET'
-    });
-
-    const body = (await response.json());
-    this.props.getListOfUsers(body);
+    await getUserListCall(this.props.getListOfUsers);
   };
 
   render() {
     const users = this.props.users ? this.props.users : [];
     const hobbiesForTest = [
-      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 },
-      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 },
-      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 },
-      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 },
-      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 },
-      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 }
+      { id: 1, passionLevel: 'High', name: 'Fishing', year: 2014 },
+      { id: 2, passionLevel: 'High', name: 'Fishing', year: 2014 },
+      { id: 3, passionLevel: 'High', name: 'Fishing', year: 2014 },
+      { id: 4, passionLevel: 'High', name: 'Fishing', year: 2014 },
+      { id: 5, passionLevel: 'High', name: 'Fishing', year: 2014 },
+      { id: 6, passionLevel: 'High', name: 'Fishing', year: 2014 }
     ];
     return (
       <div className={style.MainContainer}>
@@ -60,7 +55,7 @@ export class App extends React.Component<Props, State> {
           <div className={style.Header}>User Hobbies</div>
           <div className={style.MainContent}>
             <div className={style.UsersBlock}>
-              < AddUserComponent/>
+              <AddUserComponent/>
               {users.map((user: User) => {
                 return <UserComponent key={user.id} user={user}/>;
               })}

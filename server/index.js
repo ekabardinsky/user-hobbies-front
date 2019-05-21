@@ -10,7 +10,6 @@ app.get('/api/users', function (req, res) {
 });
 
 app.post('/api/users', function (req, res) {
-  console.log(req.body)
   usersStore.push({...req.body, id: idCounter++});
 
   res.send({status: 'OK'});

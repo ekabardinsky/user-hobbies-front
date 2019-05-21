@@ -3,7 +3,7 @@ import * as style from './style.css';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 import { addUser, getListOfUsers } from 'app/actions';
-import { addUserCall } from 'app/utils/apiHelper';
+import { addUserCall, getUserListCall } from 'app/utils/apiHelper';
 
 interface Props {
 }
@@ -21,24 +21,19 @@ interface State {
     getListOfUsers: bindActionCreators(getListOfUsers, dispatch)
   })
 )
-export default class AddUserComponent extends React.Component<Props, State> {
+export default class AddUserComponent extends React.Component<any, State> {
   constructor(props: Props, context?: any) {
     super(props, context);
     (async () => await this.getUserList())();
   }
 
   getUserList = async () => {
-    const response = await fetch('/api/users', {
-      method: 'GET'
-    });
-
-    const body = (await response.json());
-    getListOfUsers(body);
+    await getUserListCall(this.props.getListOfUsers);
   };
 
   addUserHandler = async () => {
     const user = { name: this.state.newUserName } as any;
-    addUserCall(user, this.getUserList);
+    await addUserCall(user, this.getUserList);
   };
 
   newUserNameChangeHandler = (event: any) => {
