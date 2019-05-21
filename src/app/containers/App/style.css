@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+
+.Header {
+  /*background-color: red;*/
+  border: 1px solid black;
+  padding: 15px 0px 12px 20px;
+}
+
+.MainContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ContentWrapper {
+  min-width: 1000px;
+  /*background-color: blue;*/
+}
+
+.UsersBlock {
+  border: 1px solid black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.HobbiesBlock {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: scroll;
+  width: 70%;
+}
+
+.AddUserBlock {
+  display: flex;
+}
+
+.ButtonAddUser {
+  background: none;
+  color: inherit;
+  border: 1px solid black;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: 100%;
+  padding: 5px;
+}
+
+.Input {
+  background: white;
+  color: inherit;
+  border: 1px solid black;
+  padding: 0;
+  font: inherit;
+  cursor: text;
+  outline: inherit;
+  text-align: center;
+  min-width: 120px;
+}
+
+.MainContent {
+  display: flex;
+}
+
+.AddHobbyBlock {
+  width: 100%;
+  display: flex;
+}
+.User {
+  padding:5px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.HobbyWrapper {
+  display:flex;
+  border: 1px solid black;
+  justify-content: space-around;
+}
+.HobbyPassion {
+  text-align: center;
+  padding:5px;
+  /*background-color:red*/
+}
+.HobbyName {
+  text-align: center;
+  padding:5px;
+  /*background-color:gray*/
+}
+.HobbyYear {
+  text-align: center;
+  padding:5px;
+  /*background-color:green*/
+}
