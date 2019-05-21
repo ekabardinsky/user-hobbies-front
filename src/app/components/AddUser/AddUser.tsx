@@ -3,13 +3,9 @@ import * as style from './style.css';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 import { addUser, getListOfUsers } from 'app/actions';
-import { User } from 'app/models';
 import { addUserCall } from 'app/utils/apiHelper';
 
 interface Props {
-  users: User[],
-  addUser: Function,
-  getListOfUsers: Function
 }
 
 interface State {
@@ -17,7 +13,7 @@ interface State {
 }
 
 @connect(
-  (state, ownProps) => {
+  (state) => {
     return { users: state.userState.users };
   },
   (dispatch: Dispatch) => ({
@@ -37,7 +33,7 @@ export default class AddUserComponent extends React.Component<Props, State> {
     });
 
     const body = (await response.json());
-    this.props.getListOfUsers(body);
+    getListOfUsers(body);
   };
 
   addUserHandler = async () => {
