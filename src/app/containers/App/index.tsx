@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 import { addUser, getListOfUsers } from 'app/actions';
 import { User } from 'app/models';
-import { addUserCall } from 'app/utils/apiHelper';
 
 import UserComponent from './../../components/User/User';
 import HobbyComponent from '../../components/Hobby/Hobby';
 import AddUserComponent from '../../components/AddUser/AddUser';
+import AddHobbyComponent from '../../components/AddHobby/AddHobby';
 
 interface Props {
   users: User[],
@@ -44,45 +44,6 @@ export class App extends React.Component<Props, State> {
     this.props.getListOfUsers(body);
   };
 
-  addUserHandler = async () => {
-    const user = { name: this.state.newUserName } as any;
-    addUserCall(user, this.getUserList);
-  };
-
-  newUserNameChangeHandler = (event: any) => {
-    this.setState({ newUserName: event.target.value });
-  };
-
-  renderHeader() {
-    return (
-      <div className={style.Header}>User Hobbies</div>
-    );
-  }
-
-  renderAddUserBlock() {
-    return < AddUserComponent/>;
-  }
-
-  renderAddHobbyBlock() {
-    return (
-      <div className={style.AddHobbyBlock}>
-        <select className={style.Input}>
-          <option style={{ display: 'none' }} value="" disabled selected>Select passion level</option>
-          <option>Very-High</option>
-          <option>High</option>
-          <option>Medium</option>
-          <option>Low</option>
-        </select>
-        <input className={style.Input} placeholder={'Enter user hobby'}/>
-        <input className={style.Input} placeholder={'Enter year'}/>
-        <button className={style.ButtonAddUser} onClick={() => {
-          console.log('add hobby');
-        }}>Add
-        </button>
-      </div>
-    );
-  }
-
   render() {
     const users = this.props.users ? this.props.users : [];
     const hobbiesForTest = [
@@ -96,16 +57,16 @@ export class App extends React.Component<Props, State> {
     return (
       <div className={style.MainContainer}>
         <div className={style.ContentWrapper}>
-          {this.renderHeader()}
+          <div className={style.Header}>User Hobbies</div>
           <div className={style.MainContent}>
             <div className={style.UsersBlock}>
-              {this.renderAddUserBlock()}
+              < AddUserComponent/>
               {users.map((user: User) => {
                 return <UserComponent key={user.id} user={user}/>;
               })}
             </div>
             <div className={style.HobbiesBlock}>
-              {this.renderAddHobbyBlock()}
+              <AddHobbyComponent/>
               {hobbiesForTest.map((hobby: any) => {
                 return <HobbyComponent key={hobby.id} hobby={hobby}/>;
               })}
@@ -113,8 +74,6 @@ export class App extends React.Component<Props, State> {
           </div>
         </div>
       </div>
-
-
     );
   }
 }
