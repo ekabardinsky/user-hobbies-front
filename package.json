@@ -11,7 +11,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "testWatch": "jest --watch",
     "start": "webpack-dev-server --mode development --hot --progress --color --port 3000 --open",
     "build": "webpack -p --progress --colors",
     "prettier": "prettier --write \"src/**/*.{ts,tsx,css}\"",
@@ -56,7 +57,17 @@
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14",
     "express": "^4.17.0",
-    "body-parser": "^1.19.0"
+    "body-parser": "^1.19.0",
+    "jest": "^24.8.0",
+    "@types/jest": "^24.0.13",
+    "ts-jest": "^24.0.2",
+    "jest-transform-css": "^2.0.0",
+    "enzyme": "^3.9.0",
+    "enzyme-to-json": "^3.3.5",
+    "enzyme-adapter-react-16": "^1.13.1",
+    "@types/enzyme": "^3.9.2",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@babel/polyfill": "^7.4.4"
   },
   "dependencies": {
     "classnames": "^2.2.6",
