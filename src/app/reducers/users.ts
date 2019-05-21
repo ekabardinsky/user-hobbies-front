@@ -30,7 +30,7 @@ export const usersReducer = handleActions<RootState.UserState, any>(
       const user = newState.users.find(user => user.id === action.payload.userId);
 
       if (user) {
-        user.hobbies = [...user.hobbies, action.payload.hobbie];
+        user.hobbies = [...user.hobbies, action.payload.hobby];
       }
 
       return newState;

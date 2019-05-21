@@ -6,6 +6,10 @@ import { addUser, getListOfUsers } from 'app/actions';
 import { User } from 'app/models';
 import { addUserCall } from 'app/utils/apiHelper';
 
+import UserComponent from './../../components/User/User';
+import HobbyComponent from '../../components/Hobby/Hobby';
+import AddUserComponent from '../../components/AddUser/AddUser';
+
 interface Props {
   users: User[],
   addUser: Function,
@@ -56,12 +60,7 @@ export class App extends React.Component<Props, State> {
   }
 
   renderAddUserBlock() {
-    return (
-      <div className={style.AddUserBlock}>
-        <input className={style.Input} placeholder={'Enter user name'} onChange={this.newUserNameChangeHandler}/>
-        <button className={style.ButtonAddUser} onClick={this.addUserHandler}>Add</button>
-      </div>
-    );
+    return < AddUserComponent/>;
   }
 
   renderAddHobbyBlock() {
@@ -87,12 +86,12 @@ export class App extends React.Component<Props, State> {
   render() {
     const users = this.props.users ? this.props.users : [];
     const hobbiesForTest = [
-      { id: '', passion: 'High', name: 'Fishing', year: 2014 },
-      { id: '', passion: 'High', name: 'Fishing', year: 2014 },
-      { id: '', passion: 'High', name: 'Fishing', year: 2014 },
-      { id: '', passion: 'High', name: 'Fishing', year: 2014 },
-      { id: '', passion: 'High', name: 'Fishing', year: 2014 },
-      { id: '', passion: 'High', name: 'Fishing', year: 2014 }
+      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 },
+      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 },
+      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 },
+      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 },
+      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 },
+      { id: '', passionLevel: 'High', name: 'Fishing', year: 2014 }
     ];
     return (
       <div className={style.MainContainer}>
@@ -102,25 +101,13 @@ export class App extends React.Component<Props, State> {
             <div className={style.UsersBlock}>
               {this.renderAddUserBlock()}
               {users.map((user: User) => {
-                return (
-                  <div key={user.id} className={style.User}>
-                    {user.name}
-                  </div>);
-                {/*<div>Hobbies: {JSON.stringify(user.hobbies)}</div>*/
-                }
+                return <UserComponent key={user.id} user={user}/>;
               })}
             </div>
             <div className={style.HobbiesBlock}>
               {this.renderAddHobbyBlock()}
               {hobbiesForTest.map((hobby: any) => {
-                return (
-                  <div key={hobby.id} className={style.HobbyWrapper}>
-                    <div className={style.HobbyPassion}>{hobby.passion}</div>
-                    <div className={style.HobbyName}>{hobby.name}</div>
-                    <div className={style.HobbyYear}>Since {hobby.year}</div>
-                    <button onClick={()=> {console.log('Remove Hobby')}}/>
-                  </div>
-                );
+                return <HobbyComponent key={hobby.id} hobby={hobby}/>;
               })}
             </div>
           </div>

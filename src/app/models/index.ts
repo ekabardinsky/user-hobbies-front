@@ -1,17 +1,17 @@
 export interface User {
   id: number;
   name: string;
-  hobbies: Hobbie[];
+  hobbies: Hobby[];
 }
 
-export interface Hobbie {
+export interface Hobby {
   id: number;
   name: string;
   year: number;
-  passionLevel: HobbiePassionLevel;
+  passionLevel: HobbyPassionLevel;
 }
 
-export enum HobbiePassionLevel {
+export enum HobbyPassionLevel {
   MEDIUM = 'Medium',
   HIGH = 'High',
   LOW = 'Low',

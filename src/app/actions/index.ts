@@ -1,5 +1,5 @@
 import { createAction } from 'redux-actions';
-import { Hobbie, User } from 'app/models';
+import { Hobby, User } from 'app/models';
 
 export enum Type {
   ADD_USER = 'ADD_USER',
@@ -12,7 +12,7 @@ export enum Type {
 export const addUser = createAction<User>(Type.ADD_USER);
 export const getListOfUsers = createAction<User[]>(Type.GET_LIST_OF_USERS);
 export const addHobbies = createAction<AddHobbiesPayload>(Type.ADD_HOBBIES);
-export const getListOfUserHobbies = createAction<Hobbie[]>(Type.GET_USER_HOBBIES);
+export const getListOfUserHobbies = createAction<Hobby[]>(Type.GET_USER_HOBBIES);
 export const deleteUsersHobbies = createAction<boolean>(Type.DELETE_USER_HOBBIES);
 
-export interface AddHobbiesPayload {userId: number, hobbie: Hobbie};
+export interface AddHobbiesPayload {userId: number, hobby: Hobby};
