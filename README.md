@@ -1,16 +1,16 @@
 # User hobbies test application
-### Tesh spec: 
+### Test spec: 
 React + Redux + Typescript
 
-Tests are written on Jest
+Tests are written on Jest + enzyme
 
 ### Run the application:
-First, run the local api: 
+Firstly, run the local api: 
 ```
 npm run localApi
 ```
 
-Run application on http://localhost:3000/ :
+Then run the application on http://localhost:3000/ :
 ```
 npm run start
 ```
