@@ -1,0 +1,20 @@
+.HobbyWrapper {
+  display:flex;
+  border: 1px solid black;
+  justify-content: space-around;
+}
+.HobbyPassion {
+  text-align: center;
+  padding:5px;
+  /*background-color:red*/
+}
+.HobbyName {
+  text-align: center;
+  padding:5px;
+  /*background-color:gray*/
+}
+.HobbyYear {
+  text-align: center;
+  padding:5px;
+  /*background-color:green*/
+}

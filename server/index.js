@@ -24,7 +24,7 @@ app.post('/api/users/:id/hobbies', function (req, res) {
 
 app.delete('/api/users/:userId/hobbies/:hobbieId', function (req, res) {
   const user = usersStore.find(user => user.id == req.params.userId);
-  user.hobbies = user.hobbies.filter(hobbie => hobbie.id != req.params.hobbieId);
+  user.hobbies = user.hobbies.filter(hobby => hobby.id != req.params.hobbieId);
   res.send({status: 'OK'});
 });
 
