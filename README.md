@@ -32,3 +32,5 @@ npm t
 /src/app/store for the store
 
 /src/app/models for the models
+
+/src/app/styles for the stylesheets variables
