@@ -4,11 +4,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 import { getListOfUsers } from 'app/actions';
 import { User } from 'app/models';
-
-import UserComponent from './../../components/User/User';
-import AddUserComponent from '../../components/AddUser/AddUser';
 import { getUserListCall } from 'app/utils/apiHelper';
 import HobbiesContainer from 'app/containers/Hobbies/Hobbies';
+import UsersContainer from 'app/containers/Users/Users';
 
 interface Props {
   users: User[],
@@ -46,12 +44,8 @@ export class App extends React.Component<Props, State> {
         <div className={style.ContentWrapper}>
           <div className={style.Header}>User Hobbies</div>
           <div className={style.MainContent}>
-            <div className={style.UsersBlock}>
-              <AddUserComponent/>
-              {users.map((user: User) => {
-                return <UserComponent key={user.id} user={user}/>;
-              })}
-            </div>
+            {/* // fixme: add store connection to UsersContainer component and remove prop 'users'*/}
+            <UsersContainer users={users}/>
             <HobbiesContainer/>
           </div>
         </div>

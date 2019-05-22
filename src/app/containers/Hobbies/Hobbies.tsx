@@ -29,7 +29,7 @@ export default class HobbiesContainer extends React.Component<Props, State> {
         { id: 6, passionLevel: 'High', name: 'Fishing', year: 2014 }
       ];
     return (
-      <div className={style.HobbiesBlock}>
+      <div className={style.HobbiesContainer}>
         <AddHobbyComponent/>
         {hobbiesForTest.map((hobby: any) => {
           return <HobbyComponent key={hobby.id} hobby={hobby}/>;

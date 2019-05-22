@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b9dab4e-18e3-49f9-b317-231068f2470e" name="Default Changelist" comment="разбил на компоненты , поправил верстку, проебал автоматическое обновление списка юзеров после добавления нового">
-      <change afterPath="$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/containers/Hobbies/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/styles/variables.scss" afterDir="false" />
+    <list default="true" id="6b9dab4e-18e3-49f9-b317-231068f2470e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/containers/Users/Users.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/containers/Users/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AddHobby/AddHobby.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AddHobby/AddHobby.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AddUser/AddUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AddUser/AddUser.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/User/User.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/User/User.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/containers/App/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/App/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/containers/App/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/App/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/reducers/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reducers/state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/reducers/users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reducers/users.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/apiHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/apiHelper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/containers/App/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/App/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/containers/Hobbies/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/Hobbies/style.scss" afterDir="false" />
     </list>
     <ignored path="C:\Users\AAPrigorodov\workspace\react-redux-typescript-user-hobbies\build/" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -34,17 +26,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/containers/App/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="53" lean-forward="true" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/containers/App/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/containers/Users/Users.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/containers/Users/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/containers/App/style.scss">
+        <entry file="file://$PROJECT_DIR$/src/app/containers/Hobbies/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,16 +134,18 @@
         <option value="$PROJECT_DIR$/src/app/actions/index.ts" />
         <option value="$PROJECT_DIR$/src/app/components/AddUser/AddUser.tsx" />
         <option value="$PROJECT_DIR$/src/app/reducers/users.ts" />
-        <option value="$PROJECT_DIR$/src/app/containers/Hobbies/style.scss" />
-        <option value="$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx" />
         <option value="$PROJECT_DIR$/src/app/utils/apiHelper.ts" />
         <option value="$PROJECT_DIR$/src/app/components/User/User.tsx" />
         <option value="$PROJECT_DIR$/src/app/components/AddHobby/AddHobby.tsx" />
         <option value="$PROJECT_DIR$/server/index.js" />
         <option value="$PROJECT_DIR$/src/app/styles/variables.scss" />
         <option value="$PROJECT_DIR$/src/app/containers/App/style.css" />
+        <option value="$PROJECT_DIR$/src/app/containers/Users/Users.tsx" />
         <option value="$PROJECT_DIR$/src/app/containers/App/index.tsx" />
         <option value="$PROJECT_DIR$/src/app/containers/App/style.scss" />
+        <option value="$PROJECT_DIR$/src/app/containers/Users/style.scss" />
+        <option value="$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx" />
+        <option value="$PROJECT_DIR$/src/app/containers/Hobbies/style.scss" />
       </list>
     </option>
   </component>
@@ -164,6 +200,22 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-typescript-user-hobbies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-typescript-user-hobbies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="Hobbies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-typescript-user-hobbies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-typescript-user-hobbies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-redux-typescript-user-hobbies" type="b2602c69:ProjectViewProjectNode" />
@@ -241,7 +293,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558469872643</updated>
-      <workItem from="1558469882900" duration="9109000" />
+      <workItem from="1558469882900" duration="9651000" />
     </task>
     <task id="LOCAL-00003" summary="Add sass support">
       <created>1558473851108</created>
@@ -250,11 +302,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558473851108</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Try to implement addhobby function&#10;Fix styles">
+      <created>1558486982097</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558486982097</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16885000" />
+    <option name="totallyTimeSpent" value="17427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -289,7 +348,8 @@
     <MESSAGE value="разбил на компоненты , поправил верстку, проебал автоматическое обновление списка юзеров после добавления нового" />
     <MESSAGE value="Update Readme" />
     <MESSAGE value="Add sass support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sass support" />
+    <MESSAGE value="Try to implement addhobby function&#10;Fix styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Try to implement addhobby function&#10;Fix styles" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/app/components/AddUser/style.css">
@@ -448,13 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/containers/Hobbies/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/utils/apiHelper.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -466,16 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -535,15 +578,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/containers/App/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="53" lean-forward="true" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/containers/App/style.scss">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/containers/Users/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/containers/Users/Users.tsx">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/containers/Hobbies/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>

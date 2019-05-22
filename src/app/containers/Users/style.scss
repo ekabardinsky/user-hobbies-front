@@ -1,10 +1,10 @@
 @import '../../styles/variables.scss';
 
-.HobbiesContainer {
+.UsersContainer {
   border: 1px solid black;
+  width: 30%;
   display: flex;
   flex-direction: column;
   max-height: 300px;
   overflow-y: scroll;
-  width: 70%;
 }
