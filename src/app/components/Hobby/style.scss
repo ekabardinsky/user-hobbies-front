@@ -1,20 +1,36 @@
+@import '../../styles/variables.scss';
+@import '../../styles/common.scss';
+
 .HobbyWrapper {
-  display:flex;
+  display: flex;
   border: 1px solid black;
   justify-content: space-around;
 }
+
 .HobbyPassion {
   text-align: center;
-  padding:5px;
-  /*background-color:red*/
+  padding: $padding-standard;
+  width: 170px;
 }
+
 .HobbyName {
   text-align: center;
-  padding:5px;
-  /*background-color:gray*/
+  padding: $padding-standard;
+  width:100%;
 }
+
 .HobbyYear {
   text-align: center;
-  padding:5px;
-  /*background-color:green*/
+  padding: $padding-standard;
+  width: 110px;
+}
+
+.ButtonDeleteHobby {
+  @extend .Button;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: 15px;
+  border: 4px solid $remove-hobby-color;
+
 }

@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+@import '../../styles/common.scss';
+
+.AddUserBlock {
+  display: flex;
+}
+
+.ButtonAddUser {
+  @extend .Button;
+  width: 50px;
+  padding: $padding-standard;
+}
+
+.InputUserName {
+  @extend .TextInput;
+  width: 100%;
+}

@@ -1,5 +1,6 @@
+@import '../../styles/variables.scss';
 .User {
-  padding:5px;
+  padding: $padding-standard;
   text-align: center;
   border: 1px solid black;
 }

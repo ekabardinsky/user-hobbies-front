@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as style from './style.css';
+import * as style from './style.scss';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 import { addUser, getListOfUsers } from 'app/actions';
@@ -45,7 +45,7 @@ export default class AddUserComponent extends React.Component<any, State> {
 
     return (
       <div className={style.AddUserBlock}>
-        <input className={style.Input} placeholder={'Enter user name'} onChange={this.newUserNameChangeHandler}/>
+        <input className={style.InputUserName} placeholder={'Enter user name'} onChange={this.newUserNameChangeHandler}/>
         <button disabled={!isAddEnabled} className={style.ButtonAddUser} onClick={this.addUserHandler}>Add</button>
       </div>
     );

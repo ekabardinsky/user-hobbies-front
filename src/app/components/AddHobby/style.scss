@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+@import '../../styles/common.scss';
+.AddHobbyBlock {
+  width: 100%;
+  display: flex;
+}
+
+
+
+.InputHobbyPassion {
+  @extend .TextInput;
+  width: 170px;
+
+}
+
+.InputHobbyName {
+  @extend .TextInput;
+  width: 100%;
+}
+
+.InputHobbyYear {
+  @extend .TextInput;
+  width: 70px;
+}
+
+.ButtonAddHobby {
+  @extend .Button;
+  width: 50px;
+  padding: $padding-standard;
+}
