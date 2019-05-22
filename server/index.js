@@ -19,8 +19,13 @@ app.post('/api/users', function (req, res) {
 //add a hobby
 app.post('/api/users/:id/hobbies', function (req, res) {
 
-  const user = usersStore.find(user => user.id == req.params.id);// fixme:  Cannot read property 'push' of undefined
-  user.hobbies.push({...req.body, id: idCounter++})
+  const user = usersStore.find(user => user.id == req.params.id);
+  const hobby = {...req.body, id: idCounter++};
+  if (user.hobbies) {
+    user.hobbies.push(hobby);
+  } else {
+    user.hobbies = [hobby];
+  }
   res.send({status: 'OK'});
 });
 

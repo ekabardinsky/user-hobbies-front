@@ -41,10 +41,12 @@ export default class AddUserComponent extends React.Component<any, State> {
   };
 
   render() {
+    const isAddEnabled = this.state && this.state.newUserName;
+
     return (
       <div className={style.AddUserBlock}>
         <input className={style.InputUserName} placeholder={'Enter user name'} onChange={this.newUserNameChangeHandler}/>
-        <button className={style.ButtonAddUser} onClick={this.addUserHandler}>Add</button>
+        <button disabled={!isAddEnabled} className={style.ButtonAddUser} onClick={this.addUserHandler}>Add</button>
       </div>
     );
   }
