@@ -8,7 +8,7 @@ import HobbiesContainer from 'app/containers/Hobbies/Hobbies';
 import UsersContainer from 'app/containers/Users/Users';
 
 interface Props {
-  addUser: Function, // fixme: unnecessary props ?
+  addUser: Function,
   getListOfUsers: Function
 }
 
