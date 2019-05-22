@@ -14,7 +14,9 @@ interface State {
 
 @connect(
   (state, ownProps) => {
-    return {};
+    return {
+      selectedUserId: state.userState.selectedUserId
+    };
   },
   (dispatch: Dispatch) => ({
     selectUser: bindActionCreators(selectUser, dispatch)
@@ -31,8 +33,10 @@ export default class UserComponent extends React.Component<any, State> {
 
   render() {
     const user = this.props.user;
+    const isSelected = this.props.selectedUserId == user.id;
+
     return (
-      <div className={style.User} onClick={this.userSelectHandler}>
+      <div className={isSelected ? style.SelectedUser : style.User} onClick={this.userSelectHandler}>
         {user.name}
       </div>);
   }
