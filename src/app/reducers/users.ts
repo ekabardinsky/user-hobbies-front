@@ -4,22 +4,18 @@ import { Type } from 'app/actions';
 
 const initialState: RootState.UserState = {
   users: [],
-  selectedUserId: -1 // fixme
+  selectedUserId: -1
 };
 
 export const usersReducer = handleActions<RootState.UserState, any>(
   {
     [Type.GET_LIST_OF_USERS]: (state, action) => {
-      console.log('GET_LIST_OF_USERS reducer action=')
-      console.log(action)
       return {
         ...state,
         users: action.payload
       }
     },
     [Type.ADD_USER]: (state, action) => {
-      console.log('ADD_USER reducer action=')
-      console.log(action)
       if (action.payload && action.payload.name) {
         return {
           ...state,
@@ -29,12 +25,10 @@ export const usersReducer = handleActions<RootState.UserState, any>(
       return state;
     },
     [Type.SELECT_USER]: (state, action) => {
-      console.log('SELECT_USER reducer action=')
-      console.log(action)
-      if (action.payload && action.payload.id) {
+      if (action.payload) {
         return {
           ...state,
-          selectedUserId: action.payload.id,
+          selectedUserId: action.payload,
         };
       }
       return state;

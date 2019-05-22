@@ -3,21 +3,17 @@ import * as style from './style.scss';
 import AddUserComponent from 'app/components/AddUser/AddUser';
 import { User } from 'app/models';
 import UserComponent from 'app/components/User/User';
+import { connect } from 'react-redux';
 
-interface Props {
-  users: User[]
-}
-
-interface State {
-  // TODO: connect with store: get users and selected user id. Then get user's hobbies
-}
-
-
-export default class UsersContainer extends React.Component<Props, State> {
-  constructor(props: Props, context?: any) {
+@connect(
+  (state) => {
+    return { users: state.userState.users };
+  }
+)
+export default class UsersContainer extends React.Component<any, any> {
+  constructor(props: any, context?: any) {
     super(props, context);
   }
-
 
   render() {
     return (

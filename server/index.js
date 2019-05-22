@@ -11,7 +11,7 @@ app.get('/api/users', function (req, res) {
 
 // add an user
 app.post('/api/users', function (req, res) {
-  usersStore.push({...req.body, id: idCounter++});
+  usersStore.push({...req.body, id: idCounter++, hobbies: []});
 
   res.send({status: 'OK'});
 });

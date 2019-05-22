@@ -37,3 +37,14 @@ export const addHobbyCall = async (userId: number, hobby: any, callback: Functio
     await callback();
   }
 };
+
+export const deleteHobbyCall = async (userId: number, hobbyId: number, callback: Function) =>  {
+  const response = await fetch(`/api/users/${userId}/hobbies/${hobbyId}`, {
+    method: 'DELETE'
+  });
+
+  const status = (await response.json()).status;
+  if (status === 'OK') {
+    await callback();
+  }
+};
