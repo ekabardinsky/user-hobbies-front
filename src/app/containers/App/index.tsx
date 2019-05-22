@@ -18,6 +18,7 @@ interface State {
 
 @connect(
   (state, ownProps) => {
+    return {};
   },
   (dispatch: Dispatch) => ({
     getListOfUsers: bindActionCreators(getListOfUsers, dispatch)
