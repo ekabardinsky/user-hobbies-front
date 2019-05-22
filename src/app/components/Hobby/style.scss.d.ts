@@ -3,6 +3,7 @@
 interface CssExports {
   'Button': string;
   'ButtonDeleteHobby': string;
+  'Hobby': string;
   'HobbyName': string;
   'HobbyPassion': string;
   'HobbyWrapper': string;

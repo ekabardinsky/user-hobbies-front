@@ -3,11 +3,11 @@
   padding: $padding-standard;
   text-align: center;
   border: 1px solid black;
+  border-top: none;
+  border-left: none;
 }
 
 .SelectedUser {
-  padding:5px;
-  text-align: center;
-  border: 1px solid black;
-  background-color: green;
+  @extend .User;
+  background-color: $selected-user-color;
 }

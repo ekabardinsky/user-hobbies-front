@@ -5,8 +5,6 @@
   display: flex;
 }
 
-
-
 .InputHobbyPassion {
   @extend .TextInput;
   width: 170px;
@@ -15,6 +13,7 @@
 
 .InputHobbyName {
   @extend .TextInput;
+
   width: 100%;
 }
 
