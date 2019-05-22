@@ -44,7 +44,7 @@ export default class HobbyComponent extends React.Component<any, State> {
         <div className={style.HobbyPassion}>{hobby.passionLevel}</div>
         <div className={style.HobbyName}>{hobby.name}</div>
         <div className={style.HobbyYear}>Since {hobby.year}</div>
-        <button onClick={this.deleteHobbyHandling}/>
+        <button className={style.ButtonDeleteHobby} onClick={this.deleteHobbyHandling}/>
       </div>
     );
   }

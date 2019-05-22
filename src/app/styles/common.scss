@@ -1,26 +1,21 @@
-.AddUserBlock {
-  display: flex;
-}
+@import './variables.scss';
 
-.ButtonAddUser {
+.Button {
   background: none;
   color: inherit;
   border: 1px solid black;
-  padding: 0;
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  width: 100%;
-  padding: 5px;
 }
-.Input {
+
+.TextInput {
   background: white;
   color: inherit;
   border: 1px solid black;
-  padding: 0;
+  padding: $padding-standard;
   font: inherit;
   cursor: text;
   outline: inherit;
   text-align: center;
-  min-width: 120px;
 }

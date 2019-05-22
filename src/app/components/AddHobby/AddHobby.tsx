@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as style from './style.css';
+import * as style from './style.scss';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 import { getListOfUsers } from 'app/actions';
@@ -57,13 +57,13 @@ export default class AddHobbyComponent extends React.Component<any, State> {
   render() {
     return (
       <div className={style.AddHobbyBlock}>
-        <select defaultValue={'Select passion level'} className={style.Input}
+        <select defaultValue={'Select passion level'} className={style.InputHobbyPassion}
                 onChange={this.newHobbyPassionLevelChangeHandler}>
           <option style={{ display: 'none' }} disabled>Select passion level</option>
           {Object.keys(HobbyPassionLevel).map((item: any) => <option key={item}>{HobbyPassionLevel[item]}</option>)}
         </select>
-        <input className={style.Input} placeholder={'Enter user hobby'} onChange={this.newHobbyNameChangeHandler}/>
-        <input className={style.Input} placeholder={'Enter year'} onChange={this.newHobbyYearChangeHandler}/>
+        <input className={style.InputHobbyName} placeholder={'Enter user hobby'} onChange={this.newHobbyNameChangeHandler}/>
+        <input className={style.InputHobbyYear} placeholder={'Enter year'} onChange={this.newHobbyYearChangeHandler}/>
         <button className={style.ButtonAddHobby} onClick={this.addHobbyHandler}>Add</button>
       </div>
     );

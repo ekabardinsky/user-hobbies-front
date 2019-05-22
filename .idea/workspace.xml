@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b9dab4e-18e3-49f9-b317-231068f2470e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/containers/Users/Users.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/containers/Users/style.scss" afterDir="false" />
+    <list default="true" id="6b9dab4e-18e3-49f9-b317-231068f2470e" name="Default Changelist" comment="Update Readme.md">
+      <change afterPath="$PROJECT_DIR$/src/app/styles/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/containers/App/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/App/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AddHobby/AddHobby.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AddHobby/AddHobby.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AddHobby/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AddHobby/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AddUser/AddUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AddUser/AddUser.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AddUser/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AddUser/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Hobby/Hobby.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Hobby/Hobby.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Hobby/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Hobby/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Hobby/style.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Hobby/style.scss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/User/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/User/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/User/style.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/User/style.scss.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/containers/App/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/App/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/containers/App/style.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/App/style.scss.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/containers/Hobbies/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/Hobbies/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/containers/Hobbies/style.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/Hobbies/style.scss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/containers/Users/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/Users/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/containers/Users/style.scss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/containers/Users/style.scss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/variables.scss" afterDir="false" />
     </list>
     <ignored path="C:\Users\AAPrigorodov\workspace\react-redux-typescript-user-hobbies\build/" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -23,32 +34,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/components/Hobby/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/containers/App/index.tsx">
+        <entry file="file://$PROJECT_DIR$/src/app/components/User/style.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/containers/App/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/containers/Users/Users.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -56,29 +55,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/containers/Users/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/containers/Hobbies/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="102">
+              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="7" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx">
+        <entry file="file://$PROJECT_DIR$/src/app/containers/Hobbies/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/containers/App/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -87,7 +83,45 @@
         <entry file="file://$PROJECT_DIR$/src/app/styles/variables.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+              <caret line="1" column="17" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/styles/common.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/AddHobby/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/AddUser/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/AddUser/style.scss.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,6 +138,10 @@
       <find>users</find>
       <find>addUser</find>
       <find>getListOfUsers</find>
+      <find>button</find>
+      <find>padding</find>
+      <find>.add</find>
+      <find>heig</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -114,7 +152,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="adding-scss" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -123,29 +161,33 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/app/components/AddUser/style.css" />
-        <option value="$PROJECT_DIR$/src/app/components/AddHobby/style.css" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/declarations.d.ts" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/app/components/User/style.scss" />
-        <option value="$PROJECT_DIR$/src/app/components/Hobby/Hobby.tsx" />
         <option value="$PROJECT_DIR$/types/global.d.ts" />
         <option value="$PROJECT_DIR$/src/app/reducers/state.ts" />
         <option value="$PROJECT_DIR$/src/app/actions/index.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/AddUser/AddUser.tsx" />
         <option value="$PROJECT_DIR$/src/app/reducers/users.ts" />
         <option value="$PROJECT_DIR$/src/app/utils/apiHelper.ts" />
         <option value="$PROJECT_DIR$/src/app/components/User/User.tsx" />
-        <option value="$PROJECT_DIR$/src/app/components/AddHobby/AddHobby.tsx" />
         <option value="$PROJECT_DIR$/server/index.js" />
-        <option value="$PROJECT_DIR$/src/app/styles/variables.scss" />
         <option value="$PROJECT_DIR$/src/app/containers/App/style.css" />
         <option value="$PROJECT_DIR$/src/app/containers/Users/Users.tsx" />
         <option value="$PROJECT_DIR$/src/app/containers/App/index.tsx" />
+        <option value="$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/app/components/Hobby/Hobby.tsx" />
+        <option value="$PROJECT_DIR$/src/app/components/AddHobby/style.css" />
+        <option value="$PROJECT_DIR$/src/app/components/User/style.scss" />
+        <option value="$PROJECT_DIR$/src/app/components/AddUser/AddUser.tsx" />
+        <option value="$PROJECT_DIR$/src/app/components/AddHobby/AddHobby.tsx" />
+        <option value="$PROJECT_DIR$/src/app/styles/common.scss" />
+        <option value="$PROJECT_DIR$/src/app/components/AddHobby/style.scss" />
+        <option value="$PROJECT_DIR$/src/app/components/AddUser/style.scss" />
+        <option value="$PROJECT_DIR$/src/app/styles/variables.scss" />
         <option value="$PROJECT_DIR$/src/app/containers/App/style.scss" />
         <option value="$PROJECT_DIR$/src/app/containers/Users/style.scss" />
-        <option value="$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx" />
         <option value="$PROJECT_DIR$/src/app/containers/Hobbies/style.scss" />
+        <option value="$PROJECT_DIR$/src/app/components/Hobby/style.scss" />
       </list>
     </option>
   </component>
@@ -191,6 +233,45 @@
               <item name="react-redux-typescript-user-hobbies" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-typescript-user-hobbies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-typescript-user-hobbies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="AddHobby" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-typescript-user-hobbies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-typescript-user-hobbies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="AddUser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-typescript-user-hobbies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-typescript-user-hobbies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Hobby" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-typescript-user-hobbies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-typescript-user-hobbies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-typescript-user-hobbies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-typescript-user-hobbies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -216,6 +297,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="Users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-typescript-user-hobbies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-typescript-user-hobbies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="middleware" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-redux-typescript-user-hobbies" type="b2602c69:ProjectViewProjectNode" />
@@ -293,7 +381,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558469872643</updated>
-      <workItem from="1558469882900" duration="9651000" />
+      <workItem from="1558469882900" duration="15200000" />
     </task>
     <task id="LOCAL-00003" summary="Add sass support">
       <created>1558473851108</created>
@@ -309,11 +397,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558486982097</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix styles, small refactoring">
+      <created>1558487484890</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558487484890</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update Readme.md">
+      <created>1558488081450</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1558488081450</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17427000" />
+    <option name="totallyTimeSpent" value="22976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -349,19 +451,11 @@
     <MESSAGE value="Update Readme" />
     <MESSAGE value="Add sass support" />
     <MESSAGE value="Try to implement addhobby function&#10;Fix styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Try to implement addhobby function&#10;Fix styles" />
+    <MESSAGE value="Fix styles, small refactoring" />
+    <MESSAGE value="Update Readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Readme.md" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/components/AddUser/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/AddHobby/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -389,19 +483,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/Hobby/style.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="425">
-            <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.tsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -443,13 +524,6 @@
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/User/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -498,16 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/Hobby/Hobby.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" lean-forward="true" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/utils/apiHelper.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -522,16 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/User/User.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/actions/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -542,65 +596,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/AddUser/AddUser.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/AddHobby/AddHobby.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="21" column="116" selection-start-line="21" selection-start-column="116" selection-end-line="21" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/styles/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/containers/App/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/containers/App/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/containers/Users/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/containers/Users/Users.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -609,18 +608,157 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/containers/Hobbies/Hobbies.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+        <state relative-caret-position="274">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/containers/Users/Users.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/User/User.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="272">
+            <caret line="16" selection-start-line="16" selection-end-line="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/Hobby/Hobby.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/Hobby/style.scss.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/AddUser/style.scss.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/AddHobby/AddHobby.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="66" column="92" lean-forward="true" selection-start-line="66" selection-start-column="92" selection-end-line="66" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/AddUser/AddUser.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/styles/common.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/AddUser/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/styles/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/User/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/containers/App/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/containers/Users/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/containers/Hobbies/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/AddHobby/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/Hobby/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
         </state>
       </provider>
     </entry>
