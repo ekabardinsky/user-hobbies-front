@@ -55,6 +55,13 @@ export default class AddHobbyComponent extends React.Component<any, State> {
   };
 
   render() {
+    const isAddEnabled = this.props.selectedUserId > 0
+      && this.state
+      && this.state.newHobbyPassionLevel
+      && this.state.newHobbyName
+      && this.state.newHobbyYear
+      && parseInt(`${this.state.newHobbyYear}`);
+
     return (
       <div className={style.AddHobbyBlock}>
         <select defaultValue={'Select passion level'} className={style.Input}
@@ -64,7 +71,7 @@ export default class AddHobbyComponent extends React.Component<any, State> {
         </select>
         <input className={style.Input} placeholder={'Enter user hobby'} onChange={this.newHobbyNameChangeHandler}/>
         <input className={style.Input} placeholder={'Enter year'} onChange={this.newHobbyYearChangeHandler}/>
-        <button className={style.ButtonAddHobby} onClick={this.addHobbyHandler}>Add</button>
+        <button disabled={!isAddEnabled} className={style.ButtonAddHobby} onClick={this.addHobbyHandler}>Add</button>
       </div>
     );
   }
