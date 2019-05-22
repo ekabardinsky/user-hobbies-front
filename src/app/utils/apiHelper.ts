@@ -22,3 +22,18 @@ export const getUserListCall = async (callback: Function) => {
   const body = (await response.json());
   callback(body)
 };
+
+export const addHobbyCall = async (userId: number, hobby: any, callback: Function) =>  {
+  const response = await fetch(`/api/users/${userId}/hobbies`, {
+    method: 'POST',
+    body: JSON.stringify(hobby),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+
+  const status = (await response.json()).status;
+  if (status === 'OK') {
+    await callback();
+  }
+};

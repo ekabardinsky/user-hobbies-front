@@ -9,14 +9,17 @@ app.get('/api/users', function (req, res) {
   res.send(usersStore);
 });
 
+// add an user
 app.post('/api/users', function (req, res) {
   usersStore.push({...req.body, id: idCounter++});
 
   res.send({status: 'OK'});
 });
 
+//add a hobby
 app.post('/api/users/:id/hobbies', function (req, res) {
-  const user = usersStore.find(user => user.id == req.params.id);
+
+  const user = usersStore.find(user => user.id == req.params.id);// fixme:  Cannot read property 'push' of undefined
   user.hobbies.push({...req.body, id: idCounter++})
   res.send({status: 'OK'});
 });

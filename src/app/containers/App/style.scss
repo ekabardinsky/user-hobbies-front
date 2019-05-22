@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
-
-
-.Header {
-  /*background-color: red;*/
-  border: 1px solid black;
-  padding: 15px 0px 12px 20px;
-}
+@import '../../styles/variables.scss';
 
 .MainContainer {
   display: flex;
@@ -13,9 +7,15 @@
   flex-direction: column;
 }
 
+.Header {
+  border: $default-border;
+  padding: 15px 0px 12px 20px;
+}
+
+
 .ContentWrapper {
-  min-width: 1000px;
-  /*background-color: blue;*/
+  width:90%;
+  min-width: 900px;
 }
 
 .UsersBlock {
@@ -27,14 +27,7 @@
   overflow-y: scroll;
 }
 
-.HobbiesBlock {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  max-height: 300px;
-  overflow-y: scroll;
-  width: 70%;
-}
+
 
 
 

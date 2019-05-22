@@ -7,6 +7,7 @@ export interface RootState {
 
 export namespace RootState {
   export type UserState = {
-    users: User[]
+    users: User[],
+    selectedUserId: number
   };
 }

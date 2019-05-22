@@ -1,19 +1,18 @@
 import * as React from 'react';
-import * as style from './style.css';
+import * as style from './style.scss';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 import { getListOfUsers } from 'app/actions';
 import { User } from 'app/models';
 
 import UserComponent from './../../components/User/User';
-import HobbyComponent from '../../components/Hobby/Hobby';
 import AddUserComponent from '../../components/AddUser/AddUser';
-import AddHobbyComponent from '../../components/AddHobby/AddHobby';
 import { getUserListCall } from 'app/utils/apiHelper';
+import HobbiesContainer from 'app/containers/Hobbies/Hobbies';
 
 interface Props {
   users: User[],
-  addUser: Function,
+  addUser: Function, // fixme: unnecessary props ?
   getListOfUsers: Function
 }
 
@@ -41,14 +40,7 @@ export class App extends React.Component<Props, State> {
 
   render() {
     const users = this.props.users ? this.props.users : [];
-    const hobbiesForTest = [
-      { id: 1, passionLevel: 'High', name: 'Fishing', year: 2014 },
-      { id: 2, passionLevel: 'High', name: 'Fishing', year: 2014 },
-      { id: 3, passionLevel: 'High', name: 'Fishing', year: 2014 },
-      { id: 4, passionLevel: 'High', name: 'Fishing', year: 2014 },
-      { id: 5, passionLevel: 'High', name: 'Fishing', year: 2014 },
-      { id: 6, passionLevel: 'High', name: 'Fishing', year: 2014 }
-    ];
+
     return (
       <div className={style.MainContainer}>
         <div className={style.ContentWrapper}>
@@ -60,12 +52,7 @@ export class App extends React.Component<Props, State> {
                 return <UserComponent key={user.id} user={user}/>;
               })}
             </div>
-            <div className={style.HobbiesBlock}>
-              <AddHobbyComponent/>
-              {hobbiesForTest.map((hobby: any) => {
-                return <HobbyComponent key={hobby.id} hobby={hobby}/>;
-              })}
-            </div>
+            <HobbiesContainer/>
           </div>
         </div>
       </div>
